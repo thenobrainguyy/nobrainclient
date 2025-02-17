@@ -1,0 +1,73 @@
+{
+	"schemaVersion": 1,
+
+	"id": "nobrainclient",
+
+	"version": "1.0.0",
+
+	"name": "nobrainclient",
+
+	"description": "This is an example description! Tell everyone what your mod is about!",
+
+	"authors" : [
+		{
+			"name" : "JellySquid (jellysquid3)",
+			"contact" : {
+				"email" : "jellysquid@pm.me",
+				"homepage" : "https://jellysquid.me"
+			}
+		}
+	],
+
+	"contributors" : [],
+
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+
+	"license": "CC0-1.0",
+
+	"icon": "assets/nobrainclient/textures/nobrainclient-icon.png",
+
+	"environment": "client",
+
+	"entrypoints": {
+		"main": [
+			"gg.thenobrainguy.nobrainclient.main"
+		]
+	},
+
+	"mixins": [
+		"nobrainclient.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+
+	"custom" : {
+		"fabric-renderer-api-v1:contains_renderer" : true,
+		"modmenu" : {
+			"links" : {
+				"modmenu.discord" : "https://discord.com/invite/4fkfqAhwN3",
+				"modmenu.modrinth" : "https://modrinth.com/"
+			}
+		}
+	},
+
+	"breaks" : {
+		"essential": "*",
+		"essential-loader": "*",
+		"essential-container": "*",
+		"cactus": "*"
+	},
+
+	"suggests": {
+		"another-mod": "*"
+	}
+
+}
