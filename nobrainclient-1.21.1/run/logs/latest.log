@@ -1,0 +1,32 @@
+[23:57:45] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.21.1 with Fabric Loader 0.16.10
+[23:57:45] [main/WARN] (FabricLoader/Resolution) Mod resolution failed
+[23:57:45] [main/INFO] (FabricLoader/Resolution) Immediate reason: [HARD_DEP_NO_CANDIDATE iris 1.8.8+mc1.21.1 {depends sodium @ [0.6.x]}, ROOT_FORCELOAD_SINGLE iris 1.8.8+mc1.21.1]
+[23:57:45] [main/INFO] (FabricLoader/Resolution) Reason: [HARD_DEP iris 1.8.8+mc1.21.1 {depends sodium @ [0.6.x]}, HARD_DEP nobrainclient 1.0.0 {depends chat_heads @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends modmenu @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends waveycapes @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends lithium @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends sodium @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends ferritecore @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends immediatelyfast @ [*]}, HARD_DEP nobrainclient 1.0.0 {depends capes @ [*]}]
+[23:57:45] [main/INFO] (FabricLoader/Resolution) Fix: add [add:sodium 0.6- ([[0.6-,0.7-)]), add:chat_heads 1 ([(-∞,∞)]), add:modmenu 1 ([(-∞,∞)]), add:waveycapes 1 ([(-∞,∞)]), add:lithium 1 ([(-∞,∞)]), add:ferritecore 1 ([(-∞,∞)]), add:immediatelyfast 1 ([(-∞,∞)]), add:capes 1 ([(-∞,∞)])], remove [], replace []
+[23:57:45] [main/ERROR] (FabricLoader) Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install sodium, any 0.6.x version.
+	 - Install chat_heads, any version.
+	 - Install modmenu, any version.
+	 - Install waveycapes, any version.
+	 - Install lithium, any version.
+	 - Install ferritecore, any version.
+	 - Install immediatelyfast, any version.
+	 - Install capes, any version.
+More details:
+	 - Mod 'Iris' (iris) 1.8.8+mc1.21.1 requires any 0.6.x version of sodium, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of chat_heads, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of modmenu, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of waveycapes, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of lithium, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of sodium, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of ferritecore, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of immediatelyfast, which is missing!
+	 - Mod 'nobrainclient' (nobrainclient) 1.0.0 requires any version of capes, which is missing!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) [fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.16.10.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]

@@ -1,0 +1,86 @@
+{
+	"schemaVersion": 1,
+
+	"id": "nobrainclient",
+
+	"version": "${version}",
+
+	"name": "nobrainclient",
+
+	"description": "This is an example description! Tell everyone what your mod is about!",
+
+	"authors" : [
+		{
+			"name" : "TheNoBrainGuy",
+			"contact" : {
+				"email" : "thenobrainguy@outlook.de",
+				"homepage" : "lul"
+			}
+		}
+	],
+
+	"contributors" : [
+		"TheDeamonLord",
+		"sourcecode.yml"
+	],
+
+	"contact": {
+		"homepage": "https://discord.gg/YC6F5qRUpc",
+		"sources": "https://github.com/thenobrainguyy/nobrainclient/tree/main"
+	},
+
+	"license": "CC-BY-ND-4.0",
+
+	"icon": "assets/nobrainclient/textures/nobrainclient-icon.png",
+
+	"environment": "client",
+
+	"entrypoints": {
+		"main": [
+          "gg.thenobrainguy.nobrainclient.nobrainclient"
+		]
+	},
+
+	"mixins": [
+		"nobrainclient.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+
+		"chat_heads": "*",
+		"modmenu": "*",
+		"waveycapes": "*",
+		"iris": "*",
+		"lithium": "*",
+		"sodium": "*",
+		"ferritecore": "*",
+		"immediatelyfast": "*",
+		"capes": "*"
+	},
+
+	"custom" : {
+		"fabric-renderer-api-v1:contains_renderer" : true,
+		"modmenu" : {
+			"links" : {
+				"modmenu.discord" : "https://discord.gg/YC6F5qRUpc",
+				"modmenu.modrinth" : "https://github.com/thenobrainguyy/issues/issues"
+			}
+		}
+	},
+
+	"breaks" : {
+		"essential": "*",
+		"essential-loader": "*",
+		"essential-container": "*",
+		"cactus": "*"
+	},
+
+	"suggests": {
+		"another-mod": "*"
+	}
+
+}
