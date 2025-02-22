@@ -1,0 +1,4 @@
+/gamemode survival @a
+/effect give @a minecraft:instant_health infinite 255
+/effect give @a minecraft:regeneration infinite 255
+/kill @a
